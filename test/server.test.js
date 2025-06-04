@@ -19,4 +19,18 @@ describe('PortfolioSite server', function() {
       })
       .end(done);
   });
+
+  it('responds to GET /about', function(done) {
+    request(app)
+      .get('/about')
+      .expect('Content-Type', /html/)
+      .expect(200, done);
+  });
+
+  it('responds to GET /contact', function(done) {
+    request(app)
+      .get('/contact')
+      .expect('Content-Type', /html/)
+      .expect(200, done);
+  });
 });

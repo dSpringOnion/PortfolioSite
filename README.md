@@ -1,6 +1,6 @@
 # PortfolioSite
 
-A simple Node.js portfolio website demonstrating projects. Express is used as the backend framework and EJS templates are rendered on the server. Static assets are served from the `public` directory.
+A simple Node.js portfolio website demonstrating projects with a small about and contact section. Express is used as the backend framework and EJS templates are rendered on the server. Static assets are served from the `public` directory.
 
 ## Getting Started
 
@@ -11,12 +11,12 @@ npm install
 npm start
 ```
 
-Then visit [http://localhost:3000](http://localhost:3000) in your browser.
+Then visit [http://localhost:3000](http://localhost:3000) in your browser. Additional pages are available at `/about`, `/projects`, and `/contact`.
 
 ## Project Structure
 
 ```
-├── data            # JSON data for projects
+├── data            # JSON data for projects and about info
 ├── public          # Static assets such as CSS
 ├── views           # EJS templates
 ├── server.js       # Express application

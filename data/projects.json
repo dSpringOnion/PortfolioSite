@@ -8,5 +8,10 @@
     "title": "Project Beta",
     "description": "An API for powering data-driven apps.",
     "url": "https://example.com/beta"
+  },
+  {
+    "title": "Project Gamma",
+    "description": "Mobile app for staying productive on the go.",
+    "url": "https://example.com/gamma"
   }
 ]
