@@ -1,0 +1,22 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "A portfolio website to show the amazing people what I've been up to",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.5.0",
+    "supertest": "^7.1.1"
+  }
+}
