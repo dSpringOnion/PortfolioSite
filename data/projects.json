@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Project Alpha",
+    "description": "A web app that does amazing things.",
+    "url": "https://example.com/alpha"
+  },
+  {
+    "title": "Project Beta",
+    "description": "An API for powering data-driven apps.",
+    "url": "https://example.com/beta"
+  }
+]

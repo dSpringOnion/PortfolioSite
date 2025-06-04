@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>My Projects</h1>
+  <ul>
+    <% projects.forEach(function(project) { %>
+      <li>
+        <h2><a href="<%= project.url %>"><%= project.title %></a></h2>
+        <p><%= project.description %></p>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
