@@ -1,6 +1,6 @@
 # PortfolioSite
 
-A simple full-stack portfolio site. An Express server provides JSON APIs and serves a React + TypeScript single page application built with Vite.
+A simple full-stack portfolio site. An Express server provides JSON APIs and serves a React + TypeScript single page application built with Vite and styled with Tailwind CSS.
 
 ## Getting Started
 
