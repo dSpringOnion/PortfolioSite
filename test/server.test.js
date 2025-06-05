@@ -51,4 +51,17 @@ describe('PortfolioSite server', function() {
       .expect('Content-Type', /html/)
       .expect(200, done);
   });
+
+  it('responds with 404 for unknown API routes', function(done) {
+    request(app)
+      .get('/api/nonexistent')
+      .expect('Content-Type', /json/)
+      .expect(404)
+      .expect(res => {
+        if (!res.body || res.body.error !== 'Not found') {
+          throw new Error('Incorrect error response');
+        }
+      })
+      .end(done);
+  });
 });

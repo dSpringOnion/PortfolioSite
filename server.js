@@ -18,6 +18,11 @@ app.get('/api/about', (req, res) => {
   res.json(aboutData)
 })
 
+// Handle unknown API routes
+app.use('/api', (req, res) => {
+  res.status(404).json({ error: 'Not found' })
+})
+
 // Serve React build
 const clientBuildPath = path.join(__dirname, 'client', 'dist')
 app.use(express.static(clientBuildPath))
