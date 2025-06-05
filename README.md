@@ -1,13 +1,26 @@
 # PortfolioSite
 
+A simple full-stack portfolio site. An Express server provides JSON APIs and serves a React + TypeScript single page application built with Vite.
+Install dependencies, build the React client, and start the server:
 
-A simple Node.js portfolio website demonstrating projects with a small about and contact section. Express is used as the backend framework and EJS templates are rendered on the server. Static assets are served from the `public` directory.
+npm --prefix client install
+npm run build --prefix client
 
+Then visit [http://localhost:3000](http://localhost:3000) in your browser. The React app handles `/about`, `/projects`, and `/contact` routes.
 
-## Getting Started
+├── client          # React + TypeScript frontend (Vite)
+- `GET /api/about` — returns bio, skills and contact info.
 
-Install dependencies and start the server:
+## Testing
 
+Install dev dependencies then run the tests:
+
+```bash
+npm install
+npm test
+```
+
+All tests should pass before deploying.
 ```bash
 npm install
 npm start
