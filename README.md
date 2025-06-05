@@ -4,17 +4,14 @@ A simple full-stack portfolio site. An Express server provides JSON APIs and ser
 
 ## Getting Started
 
-Install dependencies, build the React client, and start the server:
+Install dependencies (this will also build the React client) and start the server:
 
 ```bash
 npm install
-npm --prefix client install
-npm run build --prefix client
 npm start
 ```
 
 Then visit [http://localhost:3000](http://localhost:3000) in your browser. The React app handles `/about`, `/projects`, and `/contact` routes.
-
 
 ## Project Structure
 
