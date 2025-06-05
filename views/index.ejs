@@ -1,0 +1,11 @@
+<% title = 'Home' %>
+<h1>My Projects</h1>
+<ul class="project-list">
+  <% projects.forEach(function(project) { %>
+    <li>
+      <h2><a href="<%= project.url %>"><%= project.title %></a></h2>
+      <p><%= project.description %></p>
+    </li>
+  <% }) %>
+</ul>
+

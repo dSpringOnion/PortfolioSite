@@ -15,6 +15,7 @@ npm start
 
 Then visit [http://localhost:3000](http://localhost:3000) in your browser. The React app handles `/about`, `/projects`, and `/contact` routes.
 
+
 ## Project Structure
 
 ```
@@ -41,3 +42,4 @@ npm test
 ```
 
 All tests should pass before deploying.
+

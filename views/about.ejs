@@ -1,0 +1,11 @@
+<% title = 'About' %>
+<section>
+  <h1>About Me</h1>
+  <p><%= about.bio %></p>
+  <h2>Skills</h2>
+  <ul class="skills">
+    <% about.skills.forEach(function(skill) { %>
+      <li><%= skill %></li>
+    <% }) %>
+  </ul>
+</section>
