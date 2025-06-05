@@ -11,13 +11,13 @@ export default function Contact() {
       .catch(err => console.error(err))
   }, [])
 
-  if (!about) return <p>Loading...</p>
+  if (!about) return <p className="p-4">Loading...</p>
 
   return (
-    <section>
-      <h1>Contact</h1>
-      <p>Email: <a href={`mailto:${about.email}`}>{about.email}</a></p>
-      <p>LinkedIn: <a href={about.linkedin}>{about.linkedin}</a></p>
+    <section className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-4">Contact</h1>
+      <p className="mb-2">Email: <a className="text-blue-600 hover:underline" href={`mailto:${about.email}`}>{about.email}</a></p>
+      <p>LinkedIn: <a className="text-blue-600 hover:underline" href={about.linkedin}>{about.linkedin}</a></p>
     </section>
   )
 }
