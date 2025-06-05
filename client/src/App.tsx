@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
-
+      <main className="pt-16 min-h-screen pb-12">
 export default function App() {
   return (
     <BrowserRouter>
