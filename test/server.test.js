@@ -20,6 +20,24 @@ describe('PortfolioSite server', function() {
       .end(done);
   });
 
+  it('responds to GET /api/about with json', function(done) {
+    request(app)
+      .get('/api/about')
+      .expect('Content-Type', /json/)
+      .expect(200)
+      .expect(res => {
+        if (!res.body || !res.body.bio) throw new Error('Invalid about data')
+      })
+      .end(done)
+  });
+
+  it('responds to GET /projects', function(done) {
+    request(app)
+      .get('/projects')
+      .expect('Content-Type', /html/)
+      .expect(200, done)
+  });
+
   it('responds to GET /about', function(done) {
     request(app)
       .get('/about')
