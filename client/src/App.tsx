@@ -7,12 +7,11 @@ import NotFound from './pages/NotFound'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
-
 export default function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <main className="min-h-screen pb-12">
+      <main className="pt-16 min-h-screen pb-12">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
